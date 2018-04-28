@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-repository=${repository:-$1}
+tmp = 'markriggins/todowrangler'
+
+repository=${repository:-$tmp}
 registry=${registry:-docker.io}
 
 echo "repository => ${repository}"
