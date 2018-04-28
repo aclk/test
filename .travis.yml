@@ -23,7 +23,7 @@ services:
 script:
   - docker login -u${user} -p${pass}
   - chmod +x *.sh
-  - test.sh
+  - ./test.sh
 
 branches:
   only:
