@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# 运行脚本时传递给脚本的参数称为命令行参数，并输出查看
 echo "File Name: $0"
 echo "First Parameter : $1"
 echo "First Parameter : $2"
@@ -7,13 +8,38 @@ echo "Quoted Values: $@"
 echo "Quoted Values: $*"
 echo "Total Number of Parameters : $#"
 
+# $*和$@的区别
+echo "\$*=" $*
+echo "\"\$*\"=" "$*"
+echo "\$@=" $@
+echo "\"\$@\"=" "$@"
+echo "print each param from \$*"
+for var in $*
+do
+echo "$var"
+done
+echo "print each param from \$@"
+for var in $@
+do
+echo "$var"
+done
+echo "print each param from \"\$*\""
+for var in "$*"
+do
+echo "$var"
+done
+echo "print each param from \"\$@\""
+for var in "$@"
+do
+echo "$var"
+done
 
 # print work dir
 pwd
 
-tmp = 'markriggins/todowrangler'
+tmp = "arkriggins/todowrangler"
 
-repository=${repository:-${tmp}}
+repository=${repository:-$tmp}
 registry=${registry:-docker.io}
 
 echo "repository => ${repository}"
