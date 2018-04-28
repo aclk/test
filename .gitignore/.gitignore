@@ -1,0 +1,9 @@
+### Node template
+# Logs
+logs
+log
+*.log*
+
+# intellij config
+.idea
+*.iml
