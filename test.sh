@@ -13,7 +13,7 @@ pwd
 
 tmp = 'markriggins/todowrangler'
 
-repository=${repository:-$tmp}
+repository=${repository:-${tmp}}
 registry=${registry:-docker.io}
 
 echo "repository => ${repository}"
