@@ -1,0 +1,30 @@
+language: node_js
+
+node_js:
+    - "node"
+
+env:
+    - NODE_ENV=TEST
+
+python:
+    - "3.6"
+
+addons:
+  apt:
+    packages:
+    - jq
+
+install:
+    - npm install -g json
+
+services:
+  - docker
+
+script:
+  - docker login -u${user_name} -p${pass_word}
+  - chmod +x ./*.sh
+  - ./deploy.sh
+
+branches:
+  only:
+    - travis_ci
