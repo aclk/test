@@ -21,9 +21,9 @@ services:
   - docker
 
 script:
-  - docker login -u${user_name} -p${pass_word}
-  - chmod +x ./*.sh
-  - ./deploy.sh
+  - docker login -u${user} -p${pass}
+  - chmod +x *.sh
+  - test.sh
 
 branches:
   only:
