@@ -37,6 +37,12 @@ done
 # print work dir
 pwd
 
+
+your_name="avrin.he"
+echo $your_name
+echo ${your_name}
+
+
 tmp = "arkriggins/todowrangler"
 
 repository=${repository:-$tmp}
