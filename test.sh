@@ -48,7 +48,7 @@ tmp = "arkriggins/todowrangler"
 repository=${repository:-$tmp}
 registry=${registry:-docker.io}
 
-echo "repository => ${repository}"
+echo "repository => "$repository""
 echo "registry => ${registry}"
 
 #
