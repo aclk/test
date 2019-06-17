@@ -3,7 +3,7 @@
 export GOOS= linux
 
 export GOARCH=amd64
-repo=jimmysong
+repo=abcz
 imageName=k8s-app-monitor-test
 tag=`git rev-parse --short HEAD`
 imageWholeName=${repo}/${imageName}:${tag}

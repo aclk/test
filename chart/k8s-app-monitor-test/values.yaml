@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: jimmysong/k8s-app-monitor-test
+  repository: aclk/k8s-app-monitor-test
   tag: 9c935dd
   pullPolicy: IfNotPresent
   port: 3000

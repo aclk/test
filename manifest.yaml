@@ -11,7 +11,7 @@ spec:
         k8s-app: k8s-app-monitor-test
     spec:
       containers:
-      - image: jimmysong/k8s-app-monitor-test:latest
+      - image: abcz/k8s-app-monitor-test:latest
         imagePullPolicy: Always
         name : app
         ports:

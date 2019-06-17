@@ -21,16 +21,16 @@ build:
           go build
 
     - script:
-        name: copy files to wercker output 
+        name: copy files to wercker output
         code: |
           cp -R ./ ${WERCKER_OUTPUT_DIR}
 
 deploy:
- steps:
-   - internal/docker-push:
-       username: $USERNAME
-       password: $PASSWORD
-       cmd: /pipeline/source/k8s-app-monitor-test
-       port: "3000"
-       tag: latest
-       repository: jimmysong/k8s-app-monitor-test
+  steps:
+    - internal/docker-push:
+      username: $USERNAME
+      password: $PASSWORD
+      cmd: /pipeline/source/k8s-app-monitor-test
+      port: "3000"
+      tag: latest
+      repository: abcz/test
