@@ -1,4 +1,4 @@
-package: github.com/rootsongjc/k8s-app-monitor-test
+package: github.com/aclk/test
 import:
 - package: github.com/codegangsta/negroni
 - package: github.com/gorilla/mux
